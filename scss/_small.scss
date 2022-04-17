@@ -1,0 +1,171 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* BODY  */
+body {
+	font-family: $defaultFont;
+	font-size: 16px;
+	font-weight: $lightWeight;
+    min-width: 320px;
+}
+
+.moveOver>.content {
+    transform: translateX(-180px);
+}
+.content {
+    transition: transform 500ms ease;
+}
+
+
+/* HEADER  */
+header {
+    display: grid;
+    grid-template-columns: 51px auto 48px;
+    align-items: center;
+	padding: .5rem 2vw;
+	h1 {
+        font-size: 1.6rem;
+        font-weight: $lightWeight;
+        padding-left: .5rem;
+        color: $primaryColor;
+    }
+    button {
+        width: 48px;
+        height: 48px;
+        margin: 0;
+        align-self: start;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        text-align: right;
+        color: #444;
+    }
+} // end header
+
+/* NAVIGATION STUFF GOES HERE  */
+nav {
+    background: #eee;
+    width: 180px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateX(100%);
+    div {
+        display: block;
+        text-align: center;
+        padding: 1.5rem;
+        font-size: 1.1rem;
+        background-color: #666;
+        color: #fff;
+    }
+    ul li a {
+        display: block;
+        padding: .9rem .5rem;
+        text-align: right;
+        border-bottom: 1px rgba(0,0,0,0.25) solid;
+        text-decoration: none;
+        color: black;
+    }
+    ul li a:hover {
+        background-color: $secondaryColor;
+        color: #eee;
+    }
+    li.active a {
+        color: $primaryColor;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN  */
+main {
+    h2 {
+        font-size: 3rem;
+        margin-top: 1%;
+    }
+    form fieldset {
+        margin: 2rem 0;
+        border: 1px solid #445ba9;
+        border-radius: 10px;
+        padding: .5rem 2%;
+    }
+    form legend {
+        color: #445ba9;
+        margin: 0 1rem;
+        padding: 0 .5rem;
+    }
+    form label.top, form div {
+        display: block;
+        padding-top: 1rem;
+        color: red;
+        font-size: .8rem;
+    }
+    form label.top input, form label.top select {
+        display: block;
+        font-size: 1rem;
+        border: solid 1px #999;
+        border-radius: 50px;
+        padding: .75rem;
+        color: #555;
+        width: 100%;
+        max-width: 20rem;
+        background-color: rgba(0,0,0,0.1);
+    }
+    form label.top select {
+        border-radius: 1px;
+    }
+    form label.sbs {
+        display: block;
+        padding: .75rem 0;
+        color: #555;
+    }
+    form input.submitBtn {
+        border: none;
+        background-color: #9c2c13;
+        color: white;
+        border-radius: 1rem;
+        padding: .75rem 1.5rem;
+        margin: 0 0 2rem 2%;
+        width: 96%;
+        max-width: 20rem;
+    }
+    form label.top input:required {
+        border-left: red solid 6px;
+    }
+    form label.top input:required:valid {
+        border-left: green solid 6px;
+    }
+}
+ // end main
+
+
+
+/* FOOTER  */
+#footerWrapper {background-color: #1b1b1b; }
+footer {
+    font-size: .85rem;
+	padding: 1rem 0;
+	color: #bbb;
+	text-align: center;
+	a{color: #eee;}
+}

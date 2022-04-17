@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Swag Shop</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.css"/>
+
+<!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<div id="pageWrapper">
+<div class="content">
+<div id="headerWrapper">
+	<header>
+        <img src="images/logo1x.png" alt="logo">
+		<h1>Swag Shop</h1>
+        <button id="hamburgerBtn">&#9776;</button>
+	</header>
+</div><!-- end header wrapper -->
+
+    
+    
+    <nav>
+        <div>Design Thinking</div>
+        <ul>
+        <li><a href="#">Home</a>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Deals</a></li>
+        <li class="active"><a href="#">Order</a></li>
+        <li><a href="#">Customer Reviews</a></li>
+    </ul>
+    </nav>
+
+<div id="mainWrapper">
+    <main>
+        <h2>Order</h2>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Customer Information</legend>
+                <label class="top">Full Name* <input type="text" name="name" required></label>
+                <label class="top">Phone <input type="text" name="phone" required></label>
+                <label class="top">Email* <input type="text" name="email"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Swag Information</legend>
+                <label class="top">Date Needed<input type="date" name="date"></label>
+                <label class="top">Business Name<input type="text" name="business"></label>
+                <label class="top">Business URL<input type="url" name="website"></label>
+                <label class="top">Color
+                    <select name="color">
+                        <option>PLEASE SELECT</option>
+                        <option value="purple">Purple</option>
+                        <option value="green">Green</option>
+                        <option value="yellow">Yellow</option>
+                        <option value="blue">Blue</option>
+                    </select>
+                </label>
+                <label class="top">Quantity<input type="number" name="quantity"></label>
+                <div class="top">Material</div>
+                <label class="sbs"><input type="radio" name="material" value="Aluminum"> Aluminum</label>
+                <label class="sbs"><input type="radio" name="material" value="Plastic"> Plastic</label>
+            </fieldset>
+            <fieldset>
+                <legend>Payment Information</legend>
+                <label class="top">Name on Card* <input type="text" name="cardname" required></label>
+                <label class="top">Card Number* <input type="number" name="cardnumber" required></label>
+                <label class="top">Expiration Date* <input type="number" name="expiration" required></label>
+            </fieldset>
+            <input type="submit" value="Order My Swag" class="submitBtn">
+        </form>
+    </main>
+</div><!-- end main wrapper -->
+    
+<div id="footerWrapper">
+    <footer>
+        <p>Copyright &copy; 2022 Design Thinking Inc. All rights reserved. 
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Sales</a> | <a href="#">Clients</a></p>
+    </footer>
+</div> <!-- end footer wrapper -->
+</div> <!-- End content  -->
+</div> <!-- End page wrapper -->
+<script src="js/scripts.js"></script>
+</body>
+</html> 
