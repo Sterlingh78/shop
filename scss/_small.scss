@@ -29,7 +29,7 @@ header {
 	h1 {
         font-size: 1.6rem;
         font-weight: $lightWeight;
-        padding-left: .5rem;
+        padding-left: 3rem;
         color: $primaryColor;
     }
     button {
@@ -101,10 +101,10 @@ nav {
 main {
     h2 {
         font-size: 3rem;
-        margin-top: 1%;
+        margin: 2rem 2rem;
     }
     form fieldset {
-        margin: 2rem 0;
+        margin: 2rem 2rem;
         border: 1px solid #445ba9;
         border-radius: 10px;
         padding: .5rem 2%;
